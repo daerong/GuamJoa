@@ -67,29 +67,8 @@ jQuery(function($){
       $('#escape_box').css({'width':documentWidth,'height':documentHeight});
 
       var m = $('.toggle_button').index(this);
-      if(m == "0"){
-        $(".toggle_box:eq(1)").css("display", "none");
-        if($(".toggle_box:eq("+m+")").css("display") === "none"){
-          $(".toggle_box:eq("+m+")").css("display", "block");
-          $(".toggle_box:eq("+m+")").css("left", "");
-        }else{
-          $(".toggle_box:eq("+m+")").css("display", "none");
-        }
-      }else{
-        $(".toggle_box:eq(0)").css("display", "none");
-        if($(".toggle_box:eq("+m+")").css("display") === "none"){
-          $(".toggle_box:eq("+m+")").css("display", "block");
-          if($(window).width() > 623){
-            $(".toggle_box:eq("+m+")").css("left", "50%");
-          }
-          else{
-            $(".toggle_box:eq("+m+")").css("margin-top", "84px");
-          }
-        }else{
-          $(".toggle_box:eq("+m+")").css("display", "none");
-        }
-      }
 
+      $(".toggle_box:eq("+m+")").css("display", "block");
     });
   });
 
