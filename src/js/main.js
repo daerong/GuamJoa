@@ -76,7 +76,7 @@ jQuery(function($){
   $(function () {
     $(".toggle_content").click(function () {
       var selected_content = $(this).text();
-      var box_number = "1";
+      var box_number = -1;
       $(".toggle_box").each(function(index) {
         if($(".toggle_box:eq("+index+")").css("display") == "block"){
           box_number = index;

@@ -60,6 +60,8 @@ $("#add_btn").on("click", function(){
     NowTime += '-' + "0" + Now.getDate();
   }
 
+  alert(NowTime);
+
 
     //validation
  // if(v.korName == "") {alert("한글 이름을 입력해주세요."); event.preventDefault(); $('html,body').animate({scrollTop:$("#korName").offset().top}, 500); return;}
@@ -95,8 +97,8 @@ $("#add_btn").on("click", function(){
   $("#second_divide_option > span").text("중분류 선택");
   $("#third_divide_option > span").text("소분류 선택");
   $("#fourth_divide_option > span").text("기타분류 선택");
-  $("#datepicker1").attr("value", NowTime);
-  $("#datepicker2").attr("value", NowTime);
+  $("#datepicker1").val(NowTime);
+  $("#datepicker2").val(NowTime);
   $("#reserveTime").text("투어시간");
   $(".count").val('0');
 
