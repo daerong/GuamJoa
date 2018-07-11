@@ -11,7 +11,7 @@ jQuery(function($){
       NowTime += '-' + (Now.getMonth() + 1);
     }
 
-    if(Now.getDate() < 0){
+    if(Now.getDate() >= 10){
       NowTime += '-' + Now.getDate();
     }else{
       NowTime += '-' + "0" + Now.getDate();
