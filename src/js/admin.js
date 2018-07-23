@@ -4,6 +4,18 @@ function numberWithCommas(x) {
 }
 
 jQuery(function($) {
+
+
+  $(function () {
+    $(".tr_container").click(function () {
+      if($(this).children(".hidden_toggle_box").css("display") == "none"){
+        $(this).children(".hidden_toggle_box").css("display", "block");
+      }else{
+        $(this).children(".hidden_toggle_box").css("display", "none");
+      }
+    })
+  })
+
   // 우측 메뉴바 이벤트
   $(function () {
     $(".head_menu_icon_area").click(function(){
