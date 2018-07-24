@@ -298,12 +298,12 @@ input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
 }
 
 .gray { background-color : #eeeeee; }
-#main > .list_container > .table_container > .tr_container > .td_container > .td_1 { float : left; width : 8%; text-align: center; overflow : auto; padding : 5px 0;}
-#main > .list_container > .table_container > .tr_container > .td_container > .td_2 { float : left; width : 15%; text-align: center; overflow : auto; padding : 5px 0;}
-#main > .list_container > .table_container > .tr_container > .td_container > .td_3 { float : left; width : 17%; text-align: center; overflow : auto; padding : 5px 0;}
-#main > .list_container > .table_container > .tr_container > .td_container > .td_4 { float : left; width : 20%; text-align: center; overflow : auto; padding : 5px 0;}
-#main > .list_container > .table_container > .tr_container > .td_container > .td_5 { float : left; width : 20%; text-align: center; overflow : auto; padding : 5px 0;}
-#main > .list_container > .table_container > .tr_container > .td_container > .td_6 { float : left; width : 20%; text-align: center; overflow : auto; padding : 5px 0;}
+.td_1 { float : left; width : 5%; text-align: center; overflow : auto; padding : 5px 0;}
+.td_2 { float : left; width : 15%; text-align: center; overflow : auto; padding : 5px 0;}
+.td_3 { float : left; width : 15%; text-align: center; overflow : auto; padding : 5px 0;}
+.td_4 { float : left; width : 15%; text-align: center; overflow : auto; padding : 5px 0;}
+.td_5 { float : left; width : 25%; text-align: center; overflow : auto; padding : 5px 0;}
+.td_6 { float : left; width : 25%; text-align: center; overflow : auto; padding : 5px 0;}
 
 #main > .list_container > .table_container > .tr_container > .del_btn_container {
   width : 5%;
