@@ -60,9 +60,6 @@ $("#add_btn").on("click", function(){
     NowTime += '-' + "0" + Now.getDate();
   }
 
-  alert(NowTime);
-
-
     //validation
  // if(v.korName == "") {alert("한글 이름을 입력해주세요."); event.preventDefault(); $('html,body').animate({scrollTop:$("#korName").offset().top}, 500); return;}
  // else if(v.engName == '')  {alert("영문 이름을 입력해주세요"); return;}
