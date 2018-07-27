@@ -1,7 +1,7 @@
 jQuery(function($) {
   // 상단 박스영역의 토글 박스 클릭 시 드롭다운 되는 이벤트
   $(function () {
-    $('.toggle_button').click(function() {
+    $('.big_toggle_component').click(function() {
 
       var documentWidth = $(document).width();
       var documentHeight = $(document).height();
@@ -9,9 +9,18 @@ jQuery(function($) {
       $('#escape_box').css("display", "block");
       $('#escape_box').css({'width':documentWidth,'height':documentHeight});
 
-      var m = $('.toggle_button').index(this);
+      $(this).children(".toggle_box").css("display", "block");
+    });
+  });
 
-      $(".toggle_box:eq("+m+")").css("display", "block");
+  // 상단 박스영역의 펼쳐진 토글 박스의 목록 중의 컴포넌트 클릭 시 해당 값이 버튼으로 입력 됨
+  $(function () {
+    $(".toggle_content").click(function () {
+      event.stopPropagation();
+      var selected_content = $(this).text();
+      $(this).parents(".toggle_box").siblings(".left_area").children(".down_area").children("button").children("span").text(selected_content);
+      $(this).parents(".toggle_box").css("display", "none");
+      $("#escape_box").css("display", "none");
     });
   });
 
@@ -28,22 +37,6 @@ jQuery(function($) {
         $(this).children(".round_toggle_inner").animate({marginLeft:0, backgroundColor:"#eeeeee", color : "#777777"},"slow");
         // delay(400).css("float", "left");
       }
-    });
-  });
-
-  // 상단 박스영역의 펼쳐진 토글 박스의 목록 중의 컴포넌트 클릭 시 해당 값이 버튼으로 입력 됨
-  $(function () {
-    $(".toggle_content").click(function () {
-      var selected_content = $(this).text();
-      var box_number = -1;
-      $(".toggle_box").each(function(index) {
-        if($(".toggle_box:eq("+index+")").css("display") == "block"){
-          box_number = index;
-        }
-      });
-      $(".toggle_button:eq("+box_number+")").children("span").text(selected_content);
-      $(".toggle_box:eq("+box_number+")").css("display", "none");
-      $("#escape_box").css("display", "none");
     });
   });
 
