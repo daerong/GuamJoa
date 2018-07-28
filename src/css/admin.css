@@ -371,6 +371,47 @@ input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
   overflow : auto;
 }
 
+#major_box_container > .big_search_button {
+  float : left;
+  overflow : auto;
+  width : 12%;
+  width : -webkit-calc(16.66% - 8px - 4px); /* for Chrome, Safari */
+  width :    -moz-calc(16.66% - 8px - 4px); /* for Firefox */
+  width :         calc(16.66% - 8px - 4px); /* for IE */
+  height : 58px;
+  margin : 4px;
+  background-color: #ff6600;
+  border : 2px solid #ff6600;
+}
+
+#major_box_container > .big_search_button > .image_text_container {
+  display : table;
+  overflow : auto;
+  width : 100%;
+  height : 100%;
+  text-align: center;
+  cursor : pointer;
+}
+
+#major_box_container > .big_search_button > .image_text_container > .vertical_align_container {
+  display : table-cell;
+  vertical-align: middle;
+  overflow : auto;
+}
+
+#major_box_container > .big_search_button > .image_text_container > .vertical_align_container > img {
+  width : 20px;
+  height : 20px;
+}
+
+#major_box_container > .big_search_button > .image_text_container > .vertical_align_container > div {
+  color : #ffffff;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 12px;
+}
+
+
+
 #major_box_container > .big_icon_component {
   float : left;
   overflow : auto;
